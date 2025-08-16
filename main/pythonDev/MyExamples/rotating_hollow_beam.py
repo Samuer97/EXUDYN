@@ -145,6 +145,7 @@ simulationSettings.timeIntegration.newton.relativeTolerance = 1e-5
 simulationSettings.timeIntegration.newton.absoluteTolerance = 1e-7
 simulationSettings.timeIntegration.verboseMode = 1 # Show progress
 simulationSettings.displayComputationTime = True
+simulationSettings.pauseAfterEachStep = False  # Prevent pausing during simulation
 simulationSettings.solutionSettings.writeSolutionToFile = True # Enable sensor data collection
 simulationSettings.solutionSettings.solutionWritePeriod = h * 10  # Write every 10 time steps
 
@@ -332,7 +333,6 @@ SC.visualizationSettings.general.graphicsUpdateInterval = 0.02  # Update every 2
 
 # Configure animation settings
 SC.visualizationSettings.general.useMultiThreadedRendering = True
-SC.visualizationSettings.general.pauseAfterEachStep = False
 
 # Add coordinate system display
 SC.visualizationSettings.general.showSolutionInformation = True
